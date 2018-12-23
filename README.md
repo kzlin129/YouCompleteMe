@@ -325,7 +325,7 @@ can check the version and which Python is supported by typing `:version` inside
 Vim. Look at the features included: `+python/dyn` for Python 2 and
 `+python3/dyn` for Python 3. Take note of the Vim architecture, i.e. 32 or
 64-bit. It will be important when choosing the Python installer. We recommend
-using a 64-bit client. [Daily updated copies of 32-bit and 64-bit Vim with
+using a 64-bit client. [Daily updated installers of 32-bit and 64-bit Vim with
 Python 2 and Python 3 support][vim-win-download] are available.
 
 Add the line:
@@ -3307,10 +3307,10 @@ augroup END
 
 YCM relies on the `VimLeave` event to shut down the [ycmd server][ycmd]. Some
 plugins prevent this event from triggering by exiting Vim through an autocommand
-without using the `nested` keyword (see `:h autocmd-nested`). One of these
-plugins is [vim-nerdtree-tabs][]. You should identify which plugin is
-responsible for the issue and report it to the plugin author. Note that when
-this happens, [ycmd][] will automatically shut itself down after 30 minutes.
+without using the `nested` keyword (see `:h autocmd-nested`). You should
+identify which plugin is responsible for the issue and report it to the plugin
+author. Note that when this happens, [ycmd][] will automatically shut itself
+down after 30 minutes.
 
 ### YCM does not work with my Anaconda Python setup
 
@@ -3413,7 +3413,7 @@ This software is licensed under the [GPL v3 license][gpl].
 [TSServer]: https://github.com/Microsoft/TypeScript/tree/master/src/server
 [jsconfig.json]: https://code.visualstudio.com/docs/languages/jsconfig
 [tsconfig.json]: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
-[vim-win-download]: https://bintray.com/micbou/generic/vim
+[vim-win-download]: https://github.com/vim/vim-win32-installer/releases
 [python-win-download]: https://www.python.org/downloads/windows/
 [visual-studio-download]: https://www.visualstudio.com/downloads/
 [7z-download]: http://www.7-zip.org/download.html
@@ -3434,7 +3434,6 @@ This software is licensed under the [GPL v3 license][gpl].
 [vim_win-python2.7.11-bug_workaround]: https://github.com/vim/vim-win32-installer/blob/a27bbdba9bb87fa0e44c8a00d33d46be936822dd/appveyor.bat#L86-L88
 [gitter]: https://gitter.im/Valloric/YouCompleteMe
 [ninja-compdb]: https://ninja-build.org/manual.html
-[vim-nerdtree-tabs]: https://github.com/jistr/vim-nerdtree-tabs
 [++enc]: http://vimdoc.sourceforge.net/htmldoc/editing.html#++enc
 [rustup]: https://www.rustup.rs/
 [contributing-md]: https://github.com/Valloric/YouCompleteMe/blob/master/CONTRIBUTING.md
